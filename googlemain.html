@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
+  <style>
+
+    body {
+      min-width: 400px;
+      margin-top: 10px;
+    }
+
+    nav {
+      padding-left: 80%;
+      display: flex;
+      justify-content: right;
+      font-size: 14px;
+    }
+
+    * {
+      font-family: 'Apple SD Gothic Neo',arial,sans-serif; color:rgb(58, 58, 58);
+    }
+    #email, #image, #menu, #account {
+      flex: auto;
+      display: inline-block;
+    }
+
+    .main {
+      width: 50%;
+      padding-top: 10%;
+    }
+
+    #logo {
+      position: relative;
+      margin-top: 10%;
+    }
+
+    .search {
+      position: relative;
+
+      display: flex;
+      border: 1px solid #dfe1e5;
+      background-color: #fff;
+      box-shadow: none;
+      border-radius: 24px;
+      z-index: 3;
+      height: 40px;
+      margin: 0 auto;
+      width: 482px;
+      width: auto;
+      vertical-align: middle;
+
+    }
+
+    .search:hover {
+      background-color: #fff;
+      box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+      border-color: rgba(223, 225, 229, 0)
+    }
+
+    #text {
+      flex: auto;
+      position: relative;
+      width: 50%;
+      border: none;
+      border-right: 0px;
+      border-top: 0px;
+      border-left: 0px;
+      border-bottom: 0px;
+    }
+
+    #text:focus {
+      outline: none;
+    }
+
+    #mag,
+    #kbd,
+    #mic {
+      flex: auto;
+      margin: 12px 10px 0 10px;
+      padding: 0 0 0 0;
+      color:rgba(32, 33, 36, .28);
+
+    }
+    
+    #buttons {
+      margin: 10px;
+    }
+
+    #buttons>* {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      padding: auto 10px auto 10px;
+      border-radius: 4px;
+      background-color: rgb(236, 236, 236);
+      /* color: rgb(58, 58, 58) */
+      border: none;
+      font-size: 14px;
+      height: 30px;
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+</head>
+
+<body>
+  <nav>
+    <div id="email" onclick="location.href='https://mail.google.com/mail/&ogbl'">Gmail</div>
+    <div id="image">images</div>
+    <div id="menu"><i class="fas fa-bars"></i></div>
+    <div id="account"><i class="fas fa-user-circle" onclick="location.href='https://accounts.google.com/SignOutOptions?hl=ko&continue=https://www.google.com/'"></i></div>
+  </nav>
+  <center>
+    <div class="main">
+      <img id="logo"
+        src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+        alt="google logo">
+      <div class="search">
+        <div><i class="fas fa-search" id="mag"></i></div>
+        <input type="search" id="text">
+        <div><i class="fas fa-keyboard" id="kbd"></i></div>
+        <div><i class="fas fa-microphone-alt" id="mic"></i></div>
+      </div>
+      <div id=buttons>
+        <input type="submit" value="Google 검색"onclick="location.href='http://google.com'">
+        <input type="submit" value="I'm feeling lucky" onclick="location.href='http://google.com/doodles'">
+      </div>
+    </div>
+  </center>
+</body>
+
+</html>
